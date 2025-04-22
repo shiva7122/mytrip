@@ -12,8 +12,8 @@ class TripAgents:
 
     def __init__(self):
         load_dotenv()
-        self.hf_api_key = os.getenv("HUGGINGFACE_API_KEY")    # Uncomment this line, while running locally
-        # self.hf_api_key = st.secrets["HUGGINGFACE_API_KEY"]   # Uncomment this line, while running on streamlit cloud
+        #self.hf_api_key = os.getenv("HUGGINGFACE_API_KEY")    # Uncomment this line, while running locally
+        self.hf_api_key = st.secrets["HUGGINGFACE_API_KEY"]   # Uncomment this line, while running on streamlit cloud
 
         if not self.hf_api_key:
             raise ValueError("HUGGINGFACE_API_KEY is missing. Please set it in your environment variables.")
