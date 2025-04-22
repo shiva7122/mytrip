@@ -1,7 +1,7 @@
 ########### To avoid an error that occurs while deploying the app to streamlit cloud ###########
-##__import__('pysqlite3')
-##import sys
-##sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 ################################################################################################
 
 import streamlit as st
